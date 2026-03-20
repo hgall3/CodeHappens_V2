@@ -1,7 +1,7 @@
 @import "../../Styles/Variables.scss";
 
 .custom-button {
-  // 1. ESTILOS BASE Y VERDE (Por defecto)
+  
   padding: 0.8rem 2rem;
   border-radius: 50px;
   cursor: pointer;
@@ -16,9 +16,6 @@
     color: $font-color-secondary;
   }
 
-  // 2. EL CAMBIO DE COLOR (Modificador)
-  // El "&" significa "este mismo botón". 
-  // Al poner "&.secondary" estamos seleccionando el botón que tiene AMBAS clases.
   &.secondary {
     border-color: $accent-secondary; // Naranja
     color: $accent-secondary;
