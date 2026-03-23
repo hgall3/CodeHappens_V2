@@ -1,4 +1,4 @@
-@import "../../Styles/Variables.scss";
+@use "../../Styles/Variables.scss" as *;
 
 .custom-button {
   
@@ -10,7 +10,7 @@
   font-family: $font-primary;
   font-weight: 600;
   font-size: 1rem;
-  border: 3px solid $accent-primary; // Verde
+  border: 3px solid $accent-primary;
   color: $font-color-primary;
 
   &:hover {
@@ -19,7 +19,7 @@
   }
 
   &.secondary {
-    border-color: $accent-secondary; // Naranja
+    border-color: $accent-secondary;
     color: $accent-secondary;
 
     &:hover {
