@@ -1,3 +1,64 @@
 @use "../../Styles/Variables.scss" as *;
 @use "../../Styles/Main.scss" as *;
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%; 
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    border-bottom: 1px solid rgba($accent-card, 0.2); 
+    box-shadow: 0px 4px 20px -5px rgba( $accent-card, 0.8);
+    backdrop-filter: blur(8px); 
+
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 150px; 
+        width: auto; 
+        display: block;
+    }
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 3rem; 
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        a {
+            color: $font-color-primary;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: $font-primary;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $accent-primary; 
+            }
+        }
+    }
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+}
+
