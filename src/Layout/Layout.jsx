@@ -1,15 +1,17 @@
 import { Outlet } from 'react-router-dom';
-import "./Layout.scss";
+// import Navbar from '../Components/Navbar/Navbar';
+import Background from '../Components/Background/Background';
+import './Layout.scss';
 
 const Layout = () => {
   return (
-    <>
-      <nav>Navbar</nav> 
+    <Background color="default">
+      {/* <Navbar /> */}
       <main>
-        <Outlet /> 
+        <Outlet />
       </main>
       <footer>Footer</footer>
-    </>
+    </Background>
   );
 };
 

@@ -1,0 +1,15 @@
+@use "../../Styles/Variables.scss" as *;
+
+.main-background {
+  min-height: 100vh; 
+  width: 100%;
+  transition: background-color 0.5s ease; 
+
+  &.default {
+    background-color: $background-1;
+  }
+
+  &.variant {
+    background-color: $background-2;
+  }
+}
