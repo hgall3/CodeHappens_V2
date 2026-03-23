@@ -1,4 +1,4 @@
-@use "../../Styles/Variables.scss" as *;
+@import "../../Styles/Variables.scss";
 
 .custom-button {
   
@@ -7,9 +7,11 @@
   cursor: pointer;
   background-color: transparent;
   transition: all 0.3s ease;
-  
+  font-family: $font-primary;
+  font-weight: 600;
+  font-size: 1rem;
   border: 3px solid $accent-primary; // Verde
-  color: $accent-primary;
+  color: $font-color-primary;
 
   &:hover {
     background-color: $accent-primary;
